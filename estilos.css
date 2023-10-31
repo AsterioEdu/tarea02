@@ -1,0 +1,42 @@
+.logo{
+    text-align: center;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row {
+    margin-bottom: 3px;
+    
+}
+.coli-25 {
+    width: 25%;
+    float: left;
+}
+.cold-75 {
+    width: 75%;
+    float: left;
+}
+input[type=text] {
+    width: 100%;
+    background-color: blueviolet;
+}
+input[type=date],[type=time] {    
+    background-color: blueviolet;
+}
+.row::after{
+    clear: both;
+}
+input[type=submit],[type=reset]{
+    background-color: green;
+    padding: 12px 24px;
+    color: white;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: inline-end;
+    border: none;
+}
+textarea{
+    width:100%;
+}
