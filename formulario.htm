@@ -9,11 +9,8 @@
     <link rel="icon" type="image/x-icon" href="iax_logo.png">
 </head>
 
-<body>
-    <div class="logo">
-        <img src="iax_logo.png" alt="">
-    </div>
-    <h1 id="cabecera1" style="text-align: center;">IAX actividades extraescolares - formulario</h1>
+<body>   
+    <h1 id="cabecera1" style="text-align: center;">Formulario</h1>
     <form action="">
         <fieldset>
             <legend>Alta/Edición de avtividad:</legend>
@@ -73,7 +70,7 @@
                         <label for="iddepart">Departamento:</label>
                     </div>
                     <div class="cold-75">
-                        <select name="idselect">
+                        <select class="select1" name="idselect">
                             <option value="" disabled selected>--Seleccione--</option>
                             <option value="Opcion1">Opcion1</option>
                             <option value="Opcion2">Opcion2</option>
@@ -130,84 +127,43 @@
                     <div class="coli-25">
                         <label for="idgrupos">Grupos de alumnos implicados (selecciona uno o varios)</label>
                     </div>
-                    <div class="cold-75">
-                        
+                    <div class="cold-75">                        
+                        <select class="select2" name="opciones[]" multiple>
+                            <option value="opcion1">DAM1</option>
+                            <option value="opcion2">DAM2</option>
+                            <option value="opcion3">DAM1d</option>
+                            <option value="opcion4">DAM2d</option>
+                        </select>
                     </div>
                 </div>
             </div>
             <div class="clearfix">
                 <div class="row">
                     <div class="coli-25">
-                        <label for="fechadesde">Fecha desde:</label>
-                    </div>
-                    <div class="cold-75">
-                        <input type="date" name="fechadesde" id="fechadesde">
-                    </div>
-                </div>
+                        <label for="idbus">¿Se necesita autobús?</label>
+                    </div>                    
+                </div>               
             </div>
             <div class="clearfix">
                 <div class="row">
                     <div class="coli-25">
-                        <label for="fechahasta">Fecha hasta:</label>
+                        <input type="radio" name="autobus" value="si">Sí
+                        <input type="radio" name="autobus" value="si">No
+                    </div>                    
+                </div>               
+            </div>
+            <div class="clearfix">
+                <div class="row">
+                    <div class="coli-25">
+                        <label for="idbus">Coste de la actividad (€) para el alumno, incluyendo los gastos de autobús si es necesario</label>
                     </div>
                     <div class="cold-75">
-                        <input type="date" name="fechahasta" id="fechahasta">
-                    </div>
-                </div>
+                        <input type="text" name="idbus" id="idbus">
+                    </div>                    
+                </div>               
             </div>
-            <input type="reset" value="Limpiar">
             <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
         </fieldset>
     </form>
-
-    <h3 style="text-align: center;">Listado de actividades propuestas</h3>
-
-    <table>
-        <tr>
-            <th>Pdte. validar</th>
-            <th>Nombre profes resp</th>
-            <th>Título o denominación de la actividad</th>
-            <th>Departamento</th>
-            <th>Fecha/hora de Inicio/salida</th>
-            <th>Fecha/hora de fin/llegada</th>
-            <th>Lugar de realización</th>
-            <th>Grupos implicados</th>
-            <th>Acción</th>
-        </tr>
-        <tr>
-            <td><input type="checkbox"></td>
-            <td>Rodrigo Martínez Rodríguez</td>
-            <td>Visita a CPD Universidad de Murcia</td>
-            <td>Informática</td>
-            <td>10/11/2022 9:00</td>
-            <td>10/11/2022 14:00</td>
-            <td>Campus de Espinardo</td>
-            <td>DAM1, DAM2, DAM1d, DAM2d</td>
-            <td><input type="button" value="Editar"></td>
-        </tr>
-        <tr>
-            <td><input type="checkbox"></td>
-            <td>María Marquez</td>
-            <td>Visita a empresa NTTData</td>
-            <td>Informática</td>
-            <td>20/11/2022 10:00</td>
-            <td>20/11/2022 14:30</td>
-            <td>Juan Carlos I, edif. Torre de cristal</td>
-            <td>DAM2, DAM2d</td>
-            <td><input type="button" value="Editar"></td>
-        </tr>
-        <tr>
-            <td><input type="checkbox"></td>
-            <td>Benito Sánchez</td>
-            <td>Visita a empresa Capgemini</td>
-            <td>Informática</td>
-            <td>25/11/2022 11:00</td>
-            <td>25/11/2022 13:00</td>
-            <td>Torre B, C. Nelva, 1, 30006 Murcia</td>
-            <td>DAM2, DAM2d</td>
-            <td><input type="button" value="Editar"></td>
-        </tr>
-    </table>
-</body>
-
 </html>
